@@ -1,19 +1,21 @@
 .hero {
   position: relative;
+  height: 100%;
+  // margin-top: -20px;
   flex-basis: 100%;
-  justify-content: center;
+  // justify-content: center;
   width: 80%;
   margin: auto;
   text-align: center;
 
   h2 {
-    font-size: 3rem;margin: auto;
+    font-size: 3rem;
+    margin: auto;
     margin-bottom: 3rem;
     color: var(--clr-white);
     opacity: 0.75;
     max-width: 600px;
     font-family: cursive;
-    
   }
   text-transform: uppercase;
 }
@@ -30,10 +32,20 @@
   justify-content: flex-start;
   align-items: center;
   gap: 2rem;
-  
+
   span {
     height: 0.25rem;
     background: rgb(78, 141, 115);
     width: 5rem;
+  }
+
+  @media (max-width: 620px) {
+    position: relative;
+    flex-direction: column;
+    transform: unset;
+    top: unset;
+    left: unset;
+    gap: 20px;
+
   }
 }
