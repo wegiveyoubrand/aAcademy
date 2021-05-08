@@ -1,0 +1,11 @@
+.section{
+    position: relative;
+    display: grid;
+    grid-template-rows: 5rem 1fr;
+    height: 100vh;
+    background-image: url('/assets/images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: var(--clr-black);
+    background-blend-mode: overlay;
+}

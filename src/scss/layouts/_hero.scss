@@ -1,0 +1,39 @@
+.hero {
+  position: relative;
+  flex-basis: 100%;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+
+  h2 {
+    font-size: 3rem;margin: auto;
+    margin-bottom: 3rem;
+    color: var(--clr-white);
+    opacity: 0.75;
+    max-width: 600px;
+    font-family: cursive;
+    
+  }
+  text-transform: uppercase;
+}
+
+.company {
+  position: absolute;
+  top: 50%;
+  left: -10rem;
+  transform: translate(4rem, -50%);
+  color: var(--clr-white);
+  transform: rotate(-90deg);
+  letter-spacing: 0.25rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  
+  span {
+    height: 0.25rem;
+    background: rgb(78, 141, 115);
+    width: 5rem;
+  }
+}
