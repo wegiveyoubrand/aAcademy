@@ -1,23 +1,26 @@
 .hero {
-  position: relative;
   height: 100%;
-  // margin-top: -20px;
-  flex-basis: 100%;
-  // justify-content: center;
+  display: flex;
+  flex-direction: column;
   width: 80%;
+  gap: 2.5rem;
   margin: auto;
   text-align: center;
+  justify-content: center;
+  align-items: center;
 
   h2 {
     font-size: 3rem;
-    margin: auto;
-    margin-bottom: 3rem;
     color: var(--clr-white);
     opacity: 0.75;
     max-width: 600px;
     font-family: cursive;
+    text-transform: uppercase;
+
+    @media (max-width: 600px) {
+      margin-top: 2rem;
+    }
   }
-  text-transform: uppercase;
 }
 
 .company {
@@ -40,12 +43,12 @@
   }
 
   @media (max-width: 620px) {
-    position: relative;
     flex-direction: column;
-    transform: unset;
-    top: unset;
-    left: unset;
-    gap: 20px;
-
+    text-align: center;
+    transform: rotate(0);
+    transform: translateX(-50%);
+    top: 5rem;
+    left: 50%;
+    gap: 15px;
   }
 }

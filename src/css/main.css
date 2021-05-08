@@ -65,15 +65,28 @@
           box-sizing: border-box;
 }
 
-html,
-body {
+html {
   height: 100%;
   width: 100%;
 }
 
 body {
-  background: var(--clr-blue);
-  color: var(--clr-black);
+  height: 100%;
+  width: 100%;
+}
+
+.global-container {
+  position: relative;
+  height: 100vh;
+  background-image: url("/assets/images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: var(--clr-black);
+  background-blend-mode: overlay;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 3rem 1fr;
+      grid-template-rows: 3rem 1fr;
 }
 
 input[type="submit"] {
@@ -139,27 +152,43 @@ input[type="submit"]:hover {
       -ms-flex-align: start;
           align-items: start;
   padding: 0 2rem;
+  height: 3rem;
 }
 
 .hero {
-  position: relative;
   height: 100%;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 80%;
+  gap: 2.5rem;
   margin: auto;
   text-align: center;
-  text-transform: uppercase;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hero h2 {
   font-size: 3rem;
-  margin: auto;
-  margin-bottom: 3rem;
   color: var(--clr-white);
   opacity: 0.75;
   max-width: 600px;
   font-family: cursive;
+  text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+  .hero h2 {
+    margin-top: 2rem;
+  }
 }
 
 .company {
@@ -192,30 +221,18 @@ input[type="submit"]:hover {
 
 @media (max-width: 620px) {
   .company {
-    position: relative;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-transform: unset;
-            transform: unset;
-    top: unset;
-    left: unset;
-    gap: 20px;
+    text-align: center;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: 5rem;
+    left: 50%;
+    gap: 15px;
   }
-}
-
-.section {
-  position: relative;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 5rem 1fr;
-      grid-template-rows: 5rem 1fr;
-  height: 100vh;
-  background-image: url("/assets/images/hero-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-color: var(--clr-black);
-  background-blend-mode: overlay;
 }
 /*# sourceMappingURL=main.css.map */

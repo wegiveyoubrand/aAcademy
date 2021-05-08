@@ -10,13 +10,25 @@
   }
 }
 
-html,
-body {
+html {
   height: 100%;
   width: 100%;
 }
 
 body {
-  background: var(--clr-blue);
-  color: var(--clr-black);
+  height: 100%;
+  width: 100%;
+}
+
+.global-container {
+  position: relative;
+  height: 100vh;
+  background-image: url("/assets/images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: var(--clr-black);
+  background-blend-mode: overlay;
+
+  display: grid;
+  grid-template-rows: 3rem 1fr;
 }
