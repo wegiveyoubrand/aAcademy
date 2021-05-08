@@ -164,7 +164,7 @@ input[type="submit"]:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 80%;
+  width: 100%;
   gap: 2.5rem;
   margin: auto;
   text-align: center;
@@ -176,6 +176,12 @@ input[type="submit"]:hover {
           align-items: center;
 }
 
+@media (min-width: 620px) {
+  .hero {
+    width: 80%;
+  }
+}
+
 .hero h2 {
   font-size: 3rem;
   color: var(--clr-white);
@@ -183,12 +189,6 @@ input[type="submit"]:hover {
   max-width: 600px;
   font-family: cursive;
   text-transform: uppercase;
-}
-
-@media (max-width: 600px) {
-  .hero h2 {
-    margin-top: 2rem;
-  }
 }
 
 .company {
