@@ -135,6 +135,7 @@ input[type="submit"]:hover {
   display: -ms-flexbox;
   display: flex;
   gap: .5rem;
+  list-style: none;
 }
 
 .nav li {
@@ -234,14 +235,7 @@ input[type="submit"]:hover {
 }
 
 #auth header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   background: #fff;
-  height: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -256,5 +250,6 @@ input[type="submit"]:hover {
 
 #auth .nav__link {
   color: #000;
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */
