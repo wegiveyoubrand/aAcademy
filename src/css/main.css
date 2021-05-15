@@ -442,7 +442,10 @@ button {
   padding: 20px;
   text-decoration: none;
   color: #fff;
-  grid-gap: 20px;
+}
+
+#enquiries .enquiry > div a i {
+  margin-right: 20px;
 }
 
 #enquiries .enquiry .call {
