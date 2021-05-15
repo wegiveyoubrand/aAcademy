@@ -381,7 +381,6 @@ button {
   background-color: var(--clr-black);
   background-blend-mode: overlay;
   width: 100%;
-  overflow: hidden;
 }
 
 #enquiries main {
@@ -412,6 +411,15 @@ button {
 }
 
 #enquiries .enquiry > div {
+  position: relative;
+  height: auto;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+#enquiries .enquiry > div h2 {
   height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -431,11 +439,19 @@ button {
   background-color: #222;
   background-blend-mode: overlay;
   background-size: cover;
-  position: relative;
+  width: 100%;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  font-weight: 300;
+}
+
+#enquiries .enquiry > div:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 #enquiries .enquiry > div a {
-  position: absolute;
   left: 0;
   bottom: 0;
   display: -webkit-box;
@@ -446,17 +462,20 @@ button {
   padding: 20px;
   text-decoration: none;
   color: #fff;
+  z-index: 100;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 #enquiries .enquiry > div a i {
   margin-right: 20px;
 }
 
-#enquiries .enquiry .call {
+#enquiries .enquiry .call h2 {
   background-image: url(https://images.unsplash.com/photo-1523966211575-eb4a01e7dd51?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=353&q=80);
 }
 
-#enquiries .enquiry .email {
+#enquiries .enquiry .email h2 {
   background-image: url(https://images.unsplash.com/photo-1577563908411-5077b6dc7624?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
 }
 /*# sourceMappingURL=main.css.map */
