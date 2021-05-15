@@ -442,7 +442,7 @@ button {
   padding: 20px;
   text-decoration: none;
   color: #fff;
-  gap: 20px;
+  grid-gap: 20px;
 }
 
 #enquiries .enquiry .call {
