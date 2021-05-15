@@ -355,6 +355,10 @@ button {
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 #courses .courses .course:not(:last-child) {
