@@ -132,7 +132,7 @@ button {
   padding: 0 1rem;
 }
 
-.nav__link:hover {
+.nav__link:hover, .nav__link.active {
   background: rgba(29, 6, 6, 0.5);
 }
 
@@ -314,5 +314,16 @@ button {
   display: -ms-grid;
   display: grid;
   place-items: center;
+}
+
+#courses {
+  background-image: url(https://images.unsplash.com/photo-1533031403683-9f53b30187bb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--clr-black);
+  background-blend-mode: overlay;
+  width: 100%;
+  overflow: hidden;
 }
 /*# sourceMappingURL=main.css.map */
