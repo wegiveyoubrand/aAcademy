@@ -311,6 +311,15 @@ button {
           align-items: center;
 }
 
+@media (max-width: 520px) {
+  #auth header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 #auth img {
   -o-object-fit: contain;
      object-fit: contain;
