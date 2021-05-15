@@ -324,6 +324,71 @@ button {
   background-color: var(--clr-black);
   background-blend-mode: overlay;
   width: 100%;
+}
+
+#courses main {
+  position: relative;
+  margin-top: 50px;
+  color: #fff;
+}
+
+@media (min-width: 620px) {
+  #courses {
+    margin-top: 0;
+    padding-left: 180px;
+  }
+}
+
+#courses .courses {
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+}
+
+#courses .courses .course {
+  height: 200px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background-color: rgba(238, 238, 238, 0.05);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  cursor: pointer;
+}
+
+#courses .courses .course:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 620px) {
+  #courses .courses {
+    -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+}
+
+#enquiries {
+  background-image: url(https://images.unsplash.com/photo-1565230698474-2a8a500c35cb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1440&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--clr-black);
+  background-blend-mode: overlay;
+  width: 100%;
   overflow: hidden;
+}
+
+#enquiries main {
+  position: relative;
+  margin-top: 50px;
+  color: #fff;
+}
+
+@media (min-width: 620px) {
+  #enquiries {
+    margin-top: 0;
+    padding-left: 180px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
