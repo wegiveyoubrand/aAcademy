@@ -100,8 +100,8 @@ input[type="submit"] {
   color: rgba(255, 255, 255, 0.85);
   border: 1px solid var(--clr-blue);
   text-transform: uppercase;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   outline: none;
   font-weight: 700;
   letter-spacing: 2px;
@@ -110,6 +110,12 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: transparent;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
 
 .nav__link {
@@ -140,6 +146,67 @@ input[type="submit"]:hover {
 
 .nav li {
   height: 5rem;
+}
+
+.form-container {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background-color: rgba(34, 52, 85, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.form-container h3 {
+  padding-bottom: 20px;
+  color: #fff;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 5px 10px;
+  float: right;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.form-container button:hover {
+  background-color: blue;
+  color: #fff;
+}
+
+.form-container a {
+  color: #eee;
+  font-size: 80%;
+  text-decoration: none;
+  padding-top: 20px;
+  border-bottom: 2px solid #eee;
+}
+
+.input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.input-container label {
+  font-size: 90%;
+  color: #ddd;
+  padding-right: 10px;
+  text-transform: capitalize;
+}
+
+.input-container input {
+  font-size: 100%;
+  padding: 5px 10px;
 }
 
 .header {
@@ -251,5 +318,13 @@ input[type="submit"]:hover {
 #auth .nav__link {
   color: #000;
   font-weight: bold;
+}
+
+#auth main {
+  position: relative;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
 }
 /*# sourceMappingURL=main.css.map */
