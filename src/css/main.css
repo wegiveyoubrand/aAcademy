@@ -77,7 +77,8 @@ body {
 
 .global-container {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   background-image: url("/assets/images/hero-bg.jpg");
   background-size: cover;
   background-position: center;
@@ -89,7 +90,7 @@ body {
       grid-template-rows: 3rem 1fr;
 }
 
-input[type="submit"] {
+button, input[type="submit"] {
   padding: 1rem 2rem;
   cursor: pointer;
   -ms-flex-item-align: center;
@@ -108,7 +109,7 @@ input[type="submit"] {
   border-radius: 25px;
 }
 
-input[type="submit"]:hover {
+button:hover, input[type="submit"]:hover {
   background-color: transparent;
 }
 
@@ -254,6 +255,11 @@ button {
   max-width: 600px;
   font-family: cursive;
   text-transform: uppercase;
+}
+
+.take__actions > *:not(:last-child) {
+  margin-right: 10px;
+  margin-bottom: 20px;
 }
 
 .company {
