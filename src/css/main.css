@@ -248,7 +248,7 @@ button:hover, input[type="submit"]:hover {
 }
 
 .hero h2 {
-  font-size: 7vw;
+  font-size: calc(7vw + 12px);
   color: var(--clr-white);
   opacity: 0.75;
   max-width: 600px;
@@ -271,7 +271,7 @@ button:hover, input[type="submit"]:hover {
 
 .hero h2 span {
   display: block;
-  font-size: 5vw;
+  font-size: calc(5vw + 12px);
   letter-spacing: normal;
 }
 
