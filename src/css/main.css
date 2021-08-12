@@ -90,6 +90,12 @@ body {
       grid-template-rows: 3rem 1fr;
 }
 
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
 button, input[type="submit"] {
   padding: 1rem 2rem;
   cursor: pointer;
@@ -111,12 +117,6 @@ button, input[type="submit"] {
 
 button:hover, input[type="submit"]:hover {
   background-color: transparent;
-}
-
-button {
-  outline: none;
-  border: none;
-  cursor: pointer;
 }
 
 .nav__link {
@@ -236,9 +236,8 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 80%;
-  gap: 2.5rem;
-  margin: auto;
+  width: 100%;
+  margin: 0 auto;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -249,12 +248,40 @@ button {
 }
 
 .hero h2 {
-  font-size: 3rem;
+  font-size: 7vw;
   color: var(--clr-white);
   opacity: 0.75;
   max-width: 600px;
+  margin: 0 auto;
   font-family: cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
   text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.hero h2 span {
+  display: block;
+  font-size: 5vw;
+}
+
+.take__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .take__actions > *:not(:last-child) {
